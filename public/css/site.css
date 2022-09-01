@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
+body { font-family: 'Roboto', sans-serif; }
+
+/* Global */
+.title { margin-bottom: 50px; }
+.title span { font-size: 1.5rem; font-weight: 500; margin-left: 10px; }
+.title-functions span { color: #79A764; }
+.title-versions span { color: #736854; }
+.title-about span { color: #736753; }
+.title-team span { color: #3DBF8B; }
+.functions .content span { color: #736753; }
+
+/********** CSS MOBILE **********/
+@media (max-width: 991px) {
+  /* Menu Navbar */
+  .navbar { background-color: #FFC577!important; }
+  .navbar .navbar-brand img { height: 80px; }
+  .navbar .navbar-nav { display: flex; align-items: center; }
+  .navbar .navbar-nav .nav-link,
+  .navbar .navbar-nav .nav-link:hover,
+  .navbar .navbar-nav .nav-link:focus { font-size: 1.5em; color: #FFF; }
+  .navbar .navbar-toggler { background-color: transparent; border-color: transparent; }
+  .navbar .navbar-toggler-icon { background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
+  
+  /* Free Download */
+  .free-download {
+    background: #736753;
+    background-image: url('../img/landing/background-mobile.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+    margin-bottom: 50px;
+  }
+  .free-download .content {
+    display: flex;
+    flex-flow: column;
+  }
+  .free-download .content img {
+    display: block;
+    margin: 10px auto;
+    width: 300px;
+  }
+  .free-download .content h4 {
+    font-size: 2.3em;
+    text-align: center;
+    color: #FFF;
+  }
+
+  /* About */
+  .section-one .about {
+    padding: 20px 0;
+  }
+  .section-one .about .content {
+    padding-top: 30px;
+    font-size: 1.2em;
+    color: #736753;
+  }
+
+  /* Functions */
+  .section-one .functions {
+    padding: 20px 0;
+  }
+  .section-one .functions .content {
+    padding-top: 50px;
+  }
+  .section-one .functions .content .flex-item {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .section-one .functions .content .flex-item span {
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  /* Versions */
+  .versions {
+    padding: 20px 0;
+  }
+  .versions .content {
+    margin-bottom: 50px;
+  }
+  .versions .content .buttons {
+    display: flex;
+    flex-flow: column;
+  }
+  .versions .content .buttons img {
+    display: block;
+    margin: 10px auto;
+    width: 300px;
+  }
+
+  /* Team */
+  .team {
+    background-image: url('../img/landing/background-team.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px 0;
+  }
+  .team .content .profile img {
+    display: block;
+    margin: 0 auto;
+  }
+  .team .content .profile span {
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #3DBF8B;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 320px) {
+  .title span {
+    font-size: 1.3rem;
+  }
+}
+/********** FIM CSS MOBILE **********/
+
+/********** CSS DESKTOP **********/
+@media (min-width: 992px) {
+  /* Menu Navbar */
+  .navbar {
+    background-image: url('../img/landing/background-4.png'), linear-gradient(to bottom, #736753 75%, #FFFFFF 25%);
+    background-position: right -250% top 110%;
+    background-repeat: no-repeat;
+    align-items: flex-start;
+    height: 700px;
+  }
+  .navbar .navbar-brand img {
+    height: 140px;
+  }
+  .navbar .navbar-brand p {
+    color: #FFC577;
+    font-weight: 500;
+  }
+  .navbar .navbar-nav .nav-link,
+  .navbar .navbar-nav .nav-link:hover,
+  .navbar .navbar-nav .nav-link:focus {
+    font-size: 1.3em;
+    color: #FFF;
+  }
+
+  /* Free Donwload */
+  .free-download .content {
+    display: flex;
+    flex-flow: column;
+    margin-top: -400px;
+  }
+  .free-download .content h4 {
+    text-align: center;
+    color: #FFC577;
+  }
+  .free-download .content img {
+    display: block;
+    margin: 10px auto;
+  }
+
+  /* Section One */
+  .section-one {
+    background-image: url('../img/landing/functions-2.png');
+    background-repeat: no-repeat;
+    background-position: right -300px top 400px;
+    -webkit-animation: fadeInUp 4s;
+    -moz-animation: fadeInUp 4s;
+    -o-animation: fadeInUp 4s;
+    animation: fadeInUp 4s;
+  }
+
+  /* About */
+  .about .background-1 {
+    margin-left: -100px;
+  }
+  .about .content {
+    padding-top: 50px;
+    padding-right: 50px;
+    color: #736753;
+    font-size: 1.2em;
+  }
+
+  /* Functions */
+  .functions {
+    padding-top: 30px;
+  }
+  .functions .title-functions {
+    text-align: right;
+    padding-right: 250px;
+  }
+  .functions .background-2 {
+    margin-left: -280px;
+    margin-top: 150px;
+  }
+  .functions .content {
+    margin-top: 150px;
+  }
+  .functions .content .flex-item {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+  }
+  .functions .content .flex-item img {
+    height: 100px;
+  }
+  .functions .content .flex-item span {
+    margin-left: 10px;
+  }
+  
+  /* Versions */
+  .versions {
+    background-image: url('../img/landing/screenshot-2.png');
+    background-repeat: no-repeat;
+    background-position: right -450px top 0;
+    -webkit-animation: fadeInUp 4s;
+    -moz-animation: fadeInUp 4s;
+    -o-animation: fadeInUp 4s;
+    animation: fadeInUp 4s;
+    padding-top: 140px;
+  }
+  .versions .content {
+    display: flex;
+    align-items: center;
+    margin-top: 200px;
+  }
+  .versions .content .buttons img {
+    display: block;
+    margin: 20px auto;
+    width: 250px;
+  }
+
+  /* Team */
+  .team {
+    background-image: url('../img/landing/background-team.png');
+    background-repeat: no-repeat;
+    padding-top: 100px!important;
+    padding-bottom: 100px!important;
+  }
+  .team .content .profile img {
+    display: block;
+    margin: 0 auto;
+  }
+  .team .content .profile span {
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #3DBF8B;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1366px) {
+  /* Menu Navbar */
+  .navbar {
+    background-image: url('../img/landing/background-3.png'), linear-gradient(to bottom, #736753 75%, #FFFFFF 25%);
+    background-position: right -70% top 100%;
+    height: 750px;
+  }
+
+  /* Free Donwload */
+  .free-download .content {
+    margin-top: -450px;
+  }
+
+  /* Section One */
+  .section-one {
+    background-image: url('../img/landing/functions.png');
+    background-position: right -600px top 400px;
+  }
+
+  /* About */
+  .about .content {
+    padding-top: 150px;
+    padding-right: 150px;
+  }
+
+  /* Functions */
+  .functions .title-functions {
+    padding-right: 300px;
+  }
+  .functions .content {
+    margin-top: 300px;
+  }
+  .functions .content .flex-item {
+    padding: 15px 5px;
+  }
+  .functions .content .flex-item img {
+    height: 120px;
+  }
+
+  /* Versions */
+  .versions {
+    background-position: right -300px top 0;
+  }
+}
+
+@media (min-width: 1367px) and (max-width: 1490px) {
+  /* Menu Navbar */
+  .navbar {
+    background-image: url('../img/landing/background-2.png'), linear-gradient(to bottom, #736753 78%, #FFFFFF 22%);
+    background-position: right -150% top 100%;
+    height: 850px;
+  }
+
+  /* Free Donwload */
+  .free-download .content {
+    margin-top: -500px;
+  }
+
+  /* Section One */
+  .section-one {
+    background-image: url('../img/landing/functions.png');
+    background-position: right -600px top 450px;
+  }
+
+  /* About */
+  .about .content {
+    padding-top: 150px;
+    padding-right: 200px;
+  }
+
+  /* Functions */
+  .functions .title-functions {
+    padding-right: 300px;
+  }
+  .functions .content {
+    margin-top: 300px;
+  }
+  .functions .content .flex-item {
+    padding: 15px 5px;
+  }
+  .functions .content .flex-item img {
+    height: auto;
+  }
+
+  /* Versions */
+  .versions {
+    background-position: right -300px top 0;
+  }
+}
+
+@media (min-width: 1491px) and (max-width: 1600px) {
+  /* Menu Navbar */
+  .navbar {
+    background-image: url('../img/landing/background-1.png'), linear-gradient(to bottom, #736753 80%, #FFFFFF 20%);
+    background-position: right -200% top 100%;
+    height: calc(100vh);
+  }
+
+  /* Free Donwload */
+  .free-download .content {
+    margin-top: -550px;
+  }
+
+  /* Section One */
+  .section-one {
+    background-image: url('../img/landing/functions.png');
+    background-position: right -550px top 500px;
+  }
+
+  /* About */
+  .about .content {
+    padding-top: 150px;
+    padding-right: 200px;
+  }
+
+  /* Functions */
+  .functions .title-functions {
+    padding-right: 350px;
+  }
+  .functions .content {
+    margin-top: 350px;
+  }
+  .functions .content .flex-item {
+    padding: 15px 5px;
+  }
+  .functions .content .flex-item img {
+    height: auto;
+  }
+
+  /* Versions */
+  .versions {
+    background-position: right -300px top 0;
+  }
+}
+
+@media (min-width: 1601px) {
+  /* Menu Navbar */
+  .navbar {
+    background-image: url('../img/landing/background-1.png'), linear-gradient(to bottom, #736753 78%, #FFFFFF 22%);
+    background-position: right -60% top 100%;
+    height: calc(100vh);
+  }
+
+  /* Free Donwload */
+  .free-download .content {
+    margin-top: -600px;
+  }
+
+  /* Section One */
+  .section-one {
+    background-image: url('../img/landing/functions.png');
+    background-position: right -550px top 600px;
+  }
+
+  /* About */
+  .about .content {
+    padding-top: 150px;
+    padding-right: 300px;
+  }
+
+  /* Functions */
+  .functions .title-functions {
+    padding-right: 350px;
+  }
+  .functions .content {
+    margin-top: 450px;
+  }
+  .functions .content .flex-item {
+    padding: 15px 5px;
+  }
+  .functions .content .flex-item img {
+    height: auto;
+  }
+
+  /* Versions */
+  .versions {
+    background-position: right -200px top 0;
+  }
+}
+/********** FIM CSS DESKTOP **********/
+
+/* Footer */
+.footer { background-color: #3DBF8B; }
+.footer .social-icons { display: flex; justify-content: center; list-style-type: none; margin: 0; padding: 0; }
+.footer .social-icons li { margin: 0 15px; }
+.footer .social-icons li a { color: #FFF; text-decoration: none; font-weight: 500; }
+.footer .social-icons .facebook:hover { color: #3b5998; }
+.footer .social-icons .instagram:hover { color: #517fa4; }
+
+/* Footer Copyright */
+.footer-copyright { background-color: #3DBF8B; }
+
+/* BOTÃO VOLTAR AO TOPO */
+#back-to-top {
+	position: fixed;
+	z-index: 1010;
+	right: -40px;
+	bottom: 55px;
+	width: 40px;
+	height: 40px;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: #FFF;
+	text-align: center;					
+	opacity: 0.8;
+	cursor: pointer;
+	text-decoration: none;
+	-webkit-transition: all 0.4s ease 0s;
+			    transition: all 0.4s ease 0s;
+}	
+#back-to-top i {
+	font-size: 24px;
+	line-height: 40px;
+	vertical-align: top;
+	-webkit-transition: all 0.5s ease 0s;
+			    transition: all 0.5s ease 0s;
+}
+#back-to-top:hover { background-color: #000; }
+#back-to-top.visible { right: 40px; }
+#back-to-top.gone { right: -40px; }	
+
+@media (max-width: 767px) {
+	#back-to-top {
+		display: none;
+	}
+}
+/* BOTÃO VOLTAR AO TOPO */

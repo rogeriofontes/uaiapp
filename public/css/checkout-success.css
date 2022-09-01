@@ -1,0 +1,27 @@
+/* Background Image */
+section.checkout-success {
+  background-image: url('../img/background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media(max-width: 480px) {
+  section.checkout-success { min-height: 100vh; }
+}
+@media(min-width: 768px) and (max-width: 1199px) {
+  section.checkout-success { min-height: 100vh; }
+}
+@media(min-width: 1200px) {
+  section.checkout-success {
+    background-image: url('../img/landing/background-mobile.png');
+    min-height: 100vh;
+  }
+}
+
+.fw-5 { font-weight: 500; }
+.card { background-color: rgba(255,255,255,0.4);  }
+.card .card-title { font-size: 1.4rem; letter-spacing: .1rem; font-weight: 700; color: #000; }
+.card .card-description { margin: 5px 0; }
+.card .card-description span { font-weight: 400; }
+.card .card-link { color: #000; }
+.card .card-link:hover { text-decoration: none; color: #343A40; }

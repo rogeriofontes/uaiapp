@@ -1,0 +1,133 @@
+.announcement {
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+@media(max-width: 480px) {
+    .announcement { min-height: 100vh; }
+}
+@media(min-width: 768px) and (max-width: 1199px) {
+    .announcement { min-height: 100vh; }
+}
+@media(min-width: 1200px) {
+    .announcement {
+        background-image: url('../img/landing/background-mobile.png');
+        min-height: 100vh;
+    }
+}
+
+/* Input Material Design */
+select option { background-color: #d5d5d5; }
+[class*=" bmd-label"], [class^=bmd-label] { color: #FFF; }
+.is-focused [class*=" bmd-label"], .is-focused [class^=bmd-label] { color: #FFF; }
+.form-control { color: #FFF!important; }
+.form-control:invalid { background-image: linear-gradient(0deg, #FFF 2px, rgba(213,0,0,0) 0), linear-gradient(0deg, #FFF 2px, rgba(213,0,0,0) 0); }
+.form-control, .is-focused .form-control { background-image: linear-gradient(0deg, #FFF 2px, rgba(213,0,0,0) 0), linear-gradient(0deg, #FFF 2px, rgba(213,0,0,0) 0); }
+.form-control:disabled { background-color: transparent; background-image: linear-gradient(0deg, #FFF 2px, rgba(213,0,0,0) 0), linear-gradient(0deg, #FFF 2px, rgba(213,0,0,0) 0); }
+
+/* Input Radio */
+.payment-radio { background-color: rgba(255,255,255,1); border-radius: .25rem; margin: 1rem 0; padding: 0 20px; }
+.payment-radio .bmd-form-group { padding: 1.75rem 0 !important; }
+.radio label { color: rgba(0,0,0,.54); font-weight: 700; padding-left: 1.9rem!important; margin: 0!important; }
+.radio label:hover, .is-focused .radio label:hover { color: rgba(0,0,0,.54); }
+.radio label .bmd-radio::after { width: 1.4rem!important; height: 1.4rem!important; }
+.radio label .bmd-radio::before { width: 1.4rem!important; height: 1.4rem!important; }
+
+/* Botão Continuar */
+.btn { font-size: 80%; border-radius: .25rem; letter-spacing: .1rem; background-color: #69AB7B; border-color: #69AB7B; color: #FFF; }
+.btn:hover, .btn:focus, .btn:active { background-color: #69AB7B; border-color: #69AB7B; color: #FFF; }
+
+/* Placeholder */
+input[name=expiry]::placeholder { color: #FFF; }
+input[type="file"] { color: #FFF; }
+
+.form-announcement .btn-cancel {
+    font-size: 80%;
+    border-radius: 5rem;
+    letter-spacing: .1rem;
+}
+.form-announcement .file-name {
+    color: #FFF;
+    font-weight: 500;
+    word-wrap: break-word;  
+}
+.form-announcement .label-bordered {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid #FFF;
+    color: #FFF;
+    font-weight: 500;
+    padding: .375rem 0;
+    width: 100%;
+}
+.form-announcement .label-bordered::before {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f067";
+}
+
+input[type="file"] { display: none; }
+
+.announcement-gallery {
+    padding: 0 10px;
+    margin-top: -5px;
+}
+.announcement-gallery .card-image {
+    padding: 5px;
+}
+.announcement-gallery .card-image .image {
+    height: 150px;
+    width: 100%;
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.announcement-gallery .card-image .form-check {
+    background-color: rgba(0, 0, 0, 0.35);
+    padding: 5px 30px;
+}
+.announcement-gallery .card-image .form-check .form-check-input {
+    width: 16px;
+    height: 16px;
+    margin-top: 6px;
+}
+.announcement-gallery .card-image .form-check .form-check-label {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    line-height: 1.2!important;
+}
+.card-video {
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.card-video video {
+    width: 100%;
+}
+.card-video .form-check {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.35);
+    padding: 5px 30px;
+}
+.card-video .form-check .form-check-input {
+    width: 16px;
+    height: 16px;
+    margin-top: 6px;
+}
+.card-video .form-check .form-check-label {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    line-height: 1.2!important;
+}

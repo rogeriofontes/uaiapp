@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap');
+
+/* Background Image */
+section.plans {
+  background-image: url('../img/background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media(max-width: 480px) {
+  section.plans { min-height: 100vh; }
+}
+@media(min-width: 768px) and (max-width: 1199px) {
+  section.plans { min-height: 100vh; }
+}
+@media(min-width: 1200px) {
+  section.plans {
+    background-image: url('../img/landing/background-mobile.png');
+    min-height: 100vh;
+  }
+}
+
+hr { margin: 1.5rem 0; }
+
+.card { border-radius: 1rem; transition: all 0.2s; box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1); }
+.card .card-body { padding: 2rem 1.25rem; }
+.card .card-body .card-title { font-size: 1.8rem; letter-spacing: .1rem; font-weight: 700; color: #69AB7B; }
+.card .card-body .card-price { font-family: 'Fredericka the Great', cursive; font-size: 3rem; }
+
+.card .card-body .btn {
+  font-size: 80%;
+  border-radius: 5rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  opacity: 0.7;
+  transition: all 0.2s;
+  background-color: #69AB7B;
+  border-color: #69AB7B;
+  color: #FFF;
+}
+.card .card-body .btn:active {
+  background-color: #69AB7B;
+  border-color: #69AB7B;
+  color: #FFF;
+}
+
+@media (min-width: 992px) {
+  .card:hover {
+    margin-top: -.25rem;
+    margin-bottom: .25rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+  }
+  .card:hover .btn { opacity: 1; }
+}
